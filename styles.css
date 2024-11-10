@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Base Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('images/background.png'); /* Use your background image */
+    color: #ffffff;
+    background-color: #1c1c1e;
+    background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -43,14 +45,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px; /* Adjust based on your design */
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -62,7 +64,9 @@ header {
 }
 
 .hero-text h2 {
+    font-family: 'ABeeZee', sans-serif;
     font-size: 3rem;
+    font-style: italic;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -84,6 +88,8 @@ header {
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
 }
 
 .email-form button {
@@ -106,9 +112,8 @@ header {
 
 .phone-mockup img {
     max-width: 100%;
-    width: 300px; /* Adjust as needed */
+    width: 300px;
     height: auto;
-    /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);*/
     border-radius: 20px;
 }
 
@@ -124,25 +129,20 @@ header {
     font-size: 2rem;
     font-style: italic;
     margin-bottom: 30px;
-    color: #ffffff;
 }
 
-/* Feature Container: Centered Flexbox for Two Columns */
 .feature-container {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 40px; /* Space below text section */
+    margin-bottom: 40px;
 }
 
-/* Feature Box Styling */
 .feature-box {
     max-width: 300px;
     text-align: center;
-    color: #ffffff;
 }
 
-/* Headings within Feature Boxes */
 .feature-box h4 {
     font-family: 'ABeeZee', sans-serif;
     font-size: 1.5rem;
@@ -150,15 +150,13 @@ header {
     margin-bottom: 10px;
 }
 
-/* Paragraph Styling within Feature Boxes */
 .feature-box p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
-    color: #dcdcdc; /* Light gray color for readability */
+    color: #dcdcdc;
 }
 
-/* Button Styling */
 .feature-button {
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -170,7 +168,6 @@ header {
     transition: background-color 0.3s;
 }
 
-/* Orange Button */
 .orange-button {
     background-color: #ffa500;
 }
@@ -179,7 +176,6 @@ header {
     background-color: #e69500;
 }
 
-/* Purple Button */
 .purple-button {
     background-color: #7a5cff;
 }
@@ -188,33 +184,31 @@ header {
     background-color: #684de0;
 }
 
-/* Feature Images Section */
+/* Feature Images */
 .feature-images {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Space between images */
+    gap: 40px;
     margin-top: 20px;
     align-items: center;
 }
 
-/* Image Container */
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px; /* Increase width for a larger image */
-    height: 700px; /* Increase height for a larger image */
+    width: 350px;
+    height: 700px;
     overflow: hidden;
 }
 
-/* Image Styling */
 .image-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-
+/* Footer Section */
 .footer-signup {
     text-align: center;
     padding: 20px;
@@ -225,89 +219,89 @@ header {
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 20px;
-    color: #ffffff;
 }
 
-/* Center the email form container */
+/* Center the email form */
 .email-container {
     display: flex;
-    justify-content: center; /* Centers the form horizontally */
+    justify-content: center;
     margin: 20px 0;
 }
 
-/* Email Form Styling */
-.email-form {
+/* Team and Achievements Section */
+.section-title {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.team-grid {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.email-form input[type="email"] {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.email-form button {
-    padding: 10px 15px;
-    font-size: 1.2rem;
-    background-color: #ffa500;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    color: #ffffff;
-    transition: background-color 0.3s;
-}
-
-
-/* General styling for larger screens (default desktop) */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #1c1c1e;
-    color: #ffffff;
+.team-card {
+    background-color: #333333;
+    border-radius: 10px;
     padding: 20px;
+    max-width: 300px;
     text-align: center;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px;
-    text-align: left;
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
 }
 
-.hero-text {
-    max-width: 50%;
+.role {
+    font-weight: bold;
+    color: #ffa500;
 }
 
-.phone-mockup {
-    max-width: 45%;
+.bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 15px 0;
 }
 
-.hero-text h2 {
-    font-size: 3rem;
-    font-family: 'ABeeZee', sans-serif;
-    font-style: italic;
+.achievements-section {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.hero-text p {
-    font-size: 1.2rem;
+.achievements-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-/* Responsive styling for tablet */
+.achievements-section img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -333,7 +327,6 @@ header {
     }
 }
 
-/* Responsive styling for mobile */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -356,7 +349,6 @@ header {
         font-size: 0.9rem;
     }
 
-    /* Adjust email form */
     .email-container {
         width: 90%;
     }
@@ -372,48 +364,29 @@ header {
         font-size: 1rem;
     }
 
-    /* Adjust phone mockup */
     .phone-mockup {
         max-width: 80%;
         margin-top: 20px;
     }
-}
 
-/* Footer Section for all screens */
-.footer-signup {
-    text-align: center;
-    padding: 20px;
-}
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.footer-signup h2 {
-    font-size: 1.5rem;
-}
+    .team-card {
+        max-width: 90%;
+    }
 
-.email-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
+    .section-title {
+        font-size: 2rem;
+    }
 
-.email-form {
-    display: flex;
-    align-items: center;
-}
+    .section-description, .bio {
+        font-size: 1rem;
+    }
 
-
-/* Apply AbeeZee font and italic style to specific elements */
-.hero-text h2 {
-    font-family: 'ABeeZee', sans-serif;
-    font-style: italic;
-}
-
-.email-form input[type="email"] {
-    font-family: 'ABeeZee', sans-serif;
-    font-style: italic;
-}
-
-/* Apply AbeeZee font and italic style to the footer heading */
-.footer-signup .footer-heading {
-    font-family: 'ABeeZee', sans-serif;
-    font-style: italic;
+    .achievements-section img {
+        width: 90%;
+    }
 }
