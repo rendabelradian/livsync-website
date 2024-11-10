@@ -114,77 +114,306 @@ header {
 
 /* Features Section */
 .features {
-    margin-top: 50px;
     text-align: center;
+    margin-top: 50px;
+    padding: 20px;
 }
 
-.features h3 {
+.features-heading {
+    font-family: 'ABeeZee', sans-serif;
     font-size: 2rem;
+    font-style: italic;
     margin-bottom: 30px;
-    font-weight: 500;
     color: #ffffff;
 }
 
+/* Feature Container: Centered Flexbox for Two Columns */
 .feature-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+    gap: 40px;
+    margin-bottom: 40px; /* Space below text section */
 }
 
+/* Feature Box Styling */
 .feature-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    max-width: 300px;
     text-align: center;
+    color: #ffffff;
 }
 
+/* Headings within Feature Boxes */
+.feature-box h4 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling within Feature Boxes */
+.feature-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Light gray color for readability */
+}
+
+/* Button Styling */
+.feature-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Orange Button */
+.orange-button {
+    background-color: #ffa500;
+}
+
+.orange-button:hover {
+    background-color: #e69500;
+}
+
+/* Purple Button */
+.purple-button {
+    background-color: #7a5cff;
+}
+
+.purple-button:hover {
+    background-color: #684de0;
+}
+
+/* Feature Images Section */
 .feature-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; /* Space between images */
     margin-top: 20px;
+    align-items: center;
 }
 
-.feature-images img {
-    width: 500px;
-    border-radius: 10px;
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Increase width for a larger image */
+    height: 700px; /* Increase height for a larger image */
+    overflow: hidden;
 }
 
-/* Footer Section */
+/* Image Styling */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
 .footer-signup {
-    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-heading {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Center the email form container */
+.email-container {
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    margin: 20px 0;
+}
+
+/* Email Form Styling */
+.email-form {
+    display: flex;
+    align-items: center;
+}
+
+.email-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.email-form button {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+
+/* General styling for larger screens (default desktop) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
 }
 
-.social-icons {
+/* Header */
+header {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-    }
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
+}
 
-    .hero-text, .phone-mockup {
-        max-width: 100%;
+.hero-text {
+    max-width: 50%;
+}
+
+.phone-mockup {
+    max-width: 45%;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Responsive styling for tablet */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .phone-mockup img {
-        width: 80%;
+    .hero-text {
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 
-    .feature-container {
+    .phone-mockup {
+        max-width: 70%;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
+        align-items: center;
     }
 
-    .feature-images img {
-        width: 80%;
+    .hero {
+        padding: 20px;
     }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust email form */
+    .email-container {
+        width: 90%;
+    }
+
+    .email-form input[type="email"] {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .email-form button {
+        width: 30%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Adjust phone mockup */
+    .phone-mockup {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Footer Section for all screens */
+.footer-signup {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-signup h2 {
+    font-size: 1.5rem;
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Apply AbeeZee font and italic style to specific elements */
+.hero-text h2 {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+}
+
+.email-form input[type="email"] {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+}
+
+/* Apply AbeeZee font and italic style to the footer heading */
+.footer-signup .footer-heading {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
 }
