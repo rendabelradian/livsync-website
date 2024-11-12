@@ -18,8 +18,8 @@
     <header>
         <img src="images/livsync-logo-title.png" alt="LivSync Logo" class="logo">
         <nav>
-            <button id="about-button">About</button>
-            <button class="nav-button join-beta">Join beta</button>
+            <a href="team.html" class="our-story">Our Story</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
@@ -33,8 +33,8 @@
                 <p class="hero-description">And now we’d like you to become our very first users and tell us how you feel!</p>
 
                 <!-- Email Signup Form -->
-                <form class="email-form">
-                    <input type="email" placeholder="your email" required>
+                <form id="waitlistForm" class="email-form">
+                    <input type="email" id="waitlistEmail" placeholder="your email" required>
                     <button type="submit">→</button>
                 </form>
                 <p class="promise">We promise we won’t bombard you with ads and pointless emails. We will reach out to you when our beta is ready!</p>
@@ -47,42 +47,12 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h3 class="features-heading">Why we think it’s cool?</h3>
-        <div class="feature-container">
-            <!-- Feature 1 -->
-            <div class="feature-box">
-                <h4>Find roommates</h4>
-                <p>Need to find roommates who have the same living standards as you? Want someone who’ll clean up after themselves without having to ask?</p>
-                <button class="feature-button orange-button">data-based matching</button>
-            </div>
-            
-            <!-- Feature 2 -->
-            <div class="feature-box">
-                <h4>Shared chores</h4>
-                <p>No need to argue anymore about who’s turn it is to take out the trash. We got all your tasks scheduled and will remind you to do so!</p>
-                <button class="feature-button purple-button">AI-powered task manager</button>
-            </div>
-        </div>
-    
-        <!-- Feature Images -->
-        <div class="feature-images">
-            <div class="image-container">
-                <img src="images/phone-mockup-1.png" alt="Roommate matching feature">
-            </div>
-            <div class="image-container">
-                <img src="images/phone-mockup-2.png" alt="Task manager feature">
-            </div>
-        </div>
-    </section>
-    
     <!-- Footer Section -->
     <section class="footer-signup">
         <h2 class="footer-heading">6 months free <br> for our first users</h2>
         <div class="email-container">
-            <form class="email-form">
-                <input type="email" placeholder="your email" required>
+            <form id="footerWaitlistForm" class="email-form">
+                <input type="email" id="footerWaitlistEmail" placeholder="your email" required>
                 <button type="submit">→</button>
             </form>
         </div>
@@ -91,57 +61,10 @@
     </section>    
 </div>
 
-<!-- About Section (Initially Hidden) -->
-<section id="about-section" style="display: none;">
-    <h2 class="section-title">Meet the LivSync Team</h2>
-    <p class="section-description">
-        We are a team of first-generation college students dedicated to making room-sharing feel like home. For us, it all starts with finding the right roommates.
-    </p>
-    
-    <div class="team-grid">
-        <!-- Team Member Cards -->
-        <div class="team-card">
-            <img src="images/shotaro.jpg" alt="Shotaro Inagaki">
-            <h3>Shotaro Inagaki</h3>
-            <p class="role">Chief Financial Officer</p>
-            <p class="bio">Shotaro, an International Christian University '22 graduate, manages budgeting and business model development while supporting product management...</p>
-        </div>
-        <div class="team-card">
-            <img src="images/rendabel.jpg" alt="Rendabel Radian">
-            <h3>Rendabel Radian</h3>
-            <p class="role">Founding Product Manager</p>
-            <p class="bio">Rendabel, a Columbia University '23 graduate, leads engineering, finance, and marketing efforts while serving as the team's primary designer...</p>
-        </div>
-        <div class="team-card">
-            <img src="images/nathan.jpg" alt="Nathan Salcido">
-            <h3>Nathan Salcido</h3>
-            <p class="role">Chief Marketing Officer</p>
-            <p class="bio">Nathan, a New Mexico State University '25 student, develops the marketing strategy and leads content creation efforts...</p>
-        </div>
-        <div class="team-card">
-            <img src="images/verrels.jpg" alt="Verrels Eugeneo">
-            <h3>Verrels Eugeneo</h3>
-            <p class="role">Chief Engineer</p>
-            <p class="bio">Verrels, a Pomona College '25 student, leads the engineering efforts, overseeing technical development and ensuring product functionality...</p>
-        </div>
-        <div class="team-card">
-            <img src="images/keneth.jpg" alt="Keneth Gonzalez">
-            <h3>Keneth Gonzalez</h3>
-            <p class="role">Founding Software Engineer</p>
-            <p class="bio">Keneth, a Pomona College '24 graduate, develops and maintains the frontend of the web application and supports app implementation research...</p>
-        </div>
-    </div>
+<script type="module" src="firebase-setup.js"></script>
+<script type="module" src="scripts.js"></script>
+<script type="module" src="contact.js"></script>
 
-    <div class="achievements-section">
-        <h3>Finalist at Columbia Startup Competition & SageTank Ventures</h3>
-        <img src="images/group-photo.jpg" alt="Group Photo">
-    </div>
-
-    <!-- Back Button to return to Main Content -->
-    <button id="back-button">Back</button>
-</section>
-
-<script src="scripts.js"></script>
 
 </body>
 </html>

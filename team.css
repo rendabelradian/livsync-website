@@ -1,0 +1,185 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS for the full-page background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/background.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size as needed */
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700; /* Make the text bold to match main page style */
+    font-family: 'Poppins', sans-serif; /* Ensures font consistency */
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    color: #ffa500; /* Matches the hover effect color of the main and contact pages */
+}
+
+/* Section Title Styling */
+.section-title {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: 80px; /* Adjust to add space below header */
+    color: #ffffff;
+}
+
+/* Section Description */
+.section-description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #dcdcdc;
+    text-align: left; /* Ensures the biography paragraph is left-aligned */
+}
+
+/* Team Section */
+.team-section {
+    padding: 20px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Team Card Styling */
+.team-card {
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+    transition: transform 0.2s; /* Adds a little interaction effect on hover */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly enlarges card on hover */
+}
+
+.team-card h3,
+.role {
+    text-align: center; /* Center-aligns the name and role */
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Removes rounded corners */
+    border: none; /* Removes any border around the image */
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #ffffff; /* Set text color to white */
+}
+
+.role {
+    font-weight: bold;
+    color: #ffa500; /* Accent color for role */
+    margin-top: 10px;
+}
+
+.bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 10px 0;
+    color: #dcdcdc; /* Light gray for better readability */
+    text-align: left; /* Ensures the biography paragraph is left-aligned */
+}
+
+/* Achievements Section */
+.achievements-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.achievements-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.achievements-section img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-links {
+        gap: 15px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        max-width: 90%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description, .bio {
+        font-size: 1rem;
+    }
+
+    .achievements-section img {
+        width: 90%;
+    }
+}
